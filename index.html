@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reacting Love</title>
+    <!-- cdnjs link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwindcss link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-[100vh] bg-gray-900 flex flex-col justify-center items-center ">
+
+    <h1 class="uppercase tracking-[3px] text-[30px] text-gray-300 font-semibold pt-[10px]">Double tap on photo</h1>
+    <div class="h-[400px] w-[400px] bg-gray-200 mt-5 rounded-2xl relative">
+        <img id="img" class="object-cover h-[100%] w-[100%] rounded-2xl" src="https://cdn.pixabay.com/photo/2023/09/05/13/25/child-8235130_640.png" alt="">
+        <!-- <img id="img" class="object-cover h-full w-full rounded-2xl" src="https://i.pinimg.com/originals/87/87/b4/8787b48e6e7f084b71cff1fd11cc5e73.gif" alt=""> -->
+        <i id="icon" class="opacity-0 fa-solid fa-heart text-white text-[50px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] scale-[0.1] ease-linear  duration-[0.4s]"></i>
+        <div class=" relative">
+            <i id="blankLove" class="fa-regular fa-heart opacity-1 mt-3 text-[22px] text-white scale-1 ease-in  duration-[0.2s]">
+            </i>
+            <i id="fillLove" class="opacity-0 text-[red] text-[25px] fa-solid fa-heart absolute left-[-2px] top-[11px] scale-[0.1] ease-in  duration-[0.2s]"></i>
+        </div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
